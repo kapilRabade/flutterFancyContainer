@@ -4,7 +4,7 @@ class FlutterFancyContainer extends StatefulWidget {
   const FlutterFancyContainer({
     required this.child,
     Key? key,
-    this.height = 120.0,
+    this.height = 160.0,
     this.width,
     this.colorOne,
     this.colorTwo,
@@ -35,8 +35,8 @@ class _FlutterFancyContainerState extends State<FlutterFancyContainer> {
           decoration: BoxDecoration(
             borderRadius: const BorderRadius.all(Radius.circular(20.0)),
             gradient: LinearGradient(colors: [
-              widget.colorOne ?? const Color(0xFFCB1841),
-              widget.colorTwo ?? const Color(0xFF2604DE)
+              widget.colorOne ?? const Color(0xFF07EE73),
+              widget.colorTwo ?? const Color(0xFFDE0842)
             ], begin: Alignment.topLeft, end: Alignment.bottomRight),
             boxShadow: const [
               BoxShadow(
