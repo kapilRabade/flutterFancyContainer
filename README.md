@@ -1,14 +1,14 @@
 
 # Flutter Fancy Containers
 
-Flutter Fancy container package used for gradient container with custom child your Flutter app.
+Flutter Fancy container package used for gradient container with custom child in your Flutter app.
 
 ## Installation
 
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  flutter_fancy_container: ^0.0.1
+  flutter_fancy_container: ^0.0.3
 ```
 2. Import the package and use it in your Flutter App.
 ```dart
