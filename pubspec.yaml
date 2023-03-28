@@ -1,7 +1,7 @@
 name: flutter_fancy_container
-description: A new Flutter project.
+description: container with gradient color with custom child widget.
 version: 0.0.1
-homepage:
+homepage: https://github.com/kapilRabade/flutterFancyContainer
 
 environment:
   sdk: ">=2.16.1 <3.0.0"

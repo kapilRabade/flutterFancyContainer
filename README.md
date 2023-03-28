@@ -1,39 +1,71 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+# Flutter Fancy Containers
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+Flutter Fancy container package used for gradient container with custom child your Flutter app.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Installation
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
+1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
+```yaml
+dependencies:
+  flutter_fancy_container: ^0.0.1
+```
+2. Import the package and use it in your Flutter App.
 ```dart
-const like = 'sample';
+import 'package:flutter_fancy_container/flutter_fancy_container.dart';
 ```
 
-## Additional information
+## Example
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+<hr>
+
+<table>
+<tr>
+<td>
+
+```dart
+class FancyContainer extends StatefulWidget {
+  @override
+  State<FancyContainer> createState() => _FancyContainerState();
+}
+
+class _FancyContainerState extends State<FancyContainer> {
+
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.white,
+        body: Center(
+          child: FlutterFancyContainer(
+            colorOne: Colors.teal[900],
+            colorTwo: Colors.tealAccent,
+            onTap: (){
+              print("package ontap");
+            },
+            child: Center(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Text("Hello world",style: TextStyle(color: Colors.white,fontSize: 20),),
+                    Text("This is your custom child container",style: TextStyle(color: Colors.white,fontSize: 14),),
+                  ],
+                )
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+</td>
+
+</tr>
+<td>
+<img  src="https://user-images.githubusercontent.com/94171551/228188547-947c1646-06d1-4df8-9368-3ad6a90ed66d.jpg"  alt="">
+</td>
+</table>
